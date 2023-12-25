@@ -1,11 +1,8 @@
 #!/bin/bash
 read x
-count=1
 ans=1
-while [ $count -le $x ]
+for((count=1;count<=x;count++))
 do
 ans=$((ans * count))
-count=$((count + 1))
 done 
 echo "Factorial of $x is $ans "
-
